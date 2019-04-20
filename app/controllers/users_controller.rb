@@ -25,18 +25,33 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
+	@user = User.create(user_params)
+	render json: @user
     #complete this method
   end
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
+	respond_to do |format|
+	    	if User.find(params[:id]).update(user_params)
+	    		@user = User.find(params[:id]).update(user_params)
+			format.json { head :no_content }
+	    	else
+	      		format.json { render json: @user.errors, status: :unprocessable_entity }
+	    	end
+  	end
     #complete this method
   end
 
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
+	@user =User.find(params[:id])
+	@user.destroy
+    respond_to do |format|
+      	format.json { head :no_content }
+    end
     #complete this method
   end
 

@@ -1412,3 +1412,212 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms)
 
 
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /home/felipe/.rvm/gems/ruby-2.5.1/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/" for ::1 at 2019-04-17 08:55:28 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (36.1ms)
+Completed 200 OK in 4280ms (Views: 4258.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2019-04-17 08:55:41 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 135ms (Views: 129.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for ::1 at 2019-04-17 08:56:18 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CVFBA66FFBgzzWS/Ol8JmRvIJrU832Rro5y+Lj8vaNCABxcmVl1afz7mDM9XHnTFqooYuiU7VpXkcDMjYIlHcA==", "registrations"=>{"name"=>"Felipe", "last_name"=>"Lorca", "email"=>"filorca@miuandes.cl", "phone"=>"977075840", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 116ms (ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /home/felipe/.rvm/gems/ruby-2.5.1/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/" for ::1 at 2019-04-20 14:04:20 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 481ms (Views: 470.0ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /home/felipe/.rvm/gems/ruby-2.5.1/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/" for ::1 at 2019-04-20 14:32:34 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/felipe/Desktop/lab-assignment-6-naxolorca/app/controllers/sessions_controller.rb:26: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/sessions_controller.rb:26: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for ::1 at 2019-04-20 14:32:58 -0400
+  
+SyntaxError (/home/felipe/Desktop/lab-assignment-6-naxolorca/app/controllers/sessions_controller.rb:27: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/sessions_controller.rb:27: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for ::1 at 2019-04-20 14:32:59 -0400
+  
+SyntaxError (/home/felipe/Desktop/lab-assignment-6-naxolorca/app/controllers/sessions_controller.rb:27: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/sessions_controller.rb:27: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for ::1 at 2019-04-20 14:34:14 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 501ms (Views: 497.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-04-20 14:34:28 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EfUSTjeE9t5QlRzxUEmdb4x2IGGVTjpXBRDqWUSzRbI64xcu756xKYvBjpzZCF/iVqvuUATIKC0hTdd7fXm1Qg==", "session"=>{"email"=>"filorca@miuandes.cl", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+Completed 400 Bad Request in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: sesion):
+  
+app/controllers/sessions_controller.rb:24:in `login_params'
+app/controllers/sessions_controller.rb:6:in `create'
+Started POST "/login" for ::1 at 2019-04-20 14:35:18 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EfUSTjeE9t5QlRzxUEmdb4x2IGGVTjpXBRDqWUSzRbI64xcu756xKYvBjpzZCF/iVqvuUATIKC0hTdd7fXm1Qg==", "session"=>{"email"=>"filorca@miuandes.cl", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+Completed 500 Internal Server Error in 434ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `login_params' for #<SessionsController:0x00007fe878d853c0>
+Did you mean?  @_params):
+  
+app/controllers/sessions_controller.rb:6:in `create'
+Started POST "/login" for ::1 at 2019-04-20 14:35:36 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EfUSTjeE9t5QlRzxUEmdb4x2IGGVTjpXBRDqWUSzRbI64xcu756xKYvBjpzZCF/iVqvuUATIKC0hTdd7fXm1Qg==", "session"=>{"email"=>"filorca@miuandes.cl", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+Completed 400 Bad Request in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: sesion):
+  
+app/controllers/sessions_controller.rb:24:in `creation_params'
+app/controllers/sessions_controller.rb:6:in `create'
+Started POST "/login" for ::1 at 2019-04-20 14:35:45 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EfUSTjeE9t5QlRzxUEmdb4x2IGGVTjpXBRDqWUSzRbI64xcu756xKYvBjpzZCF/iVqvuUATIKC0hTdd7fXm1Qg==", "session"=>{"email"=>"filorca@miuandes.cl", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: sesion):
+  
+app/controllers/sessions_controller.rb:24:in `creation_params'
+app/controllers/sessions_controller.rb:6:in `create'
+Started GET "/sign_in" for ::1 at 2019-04-20 14:35:56 -0400
+  
+SyntaxError (/home/felipe/Desktop/lab-assignment-6-naxolorca/app/controllers/registrations_controller.rb:18: syntax error, unexpected '.', expecting ';' or '\n'
+	def user_params 							params.require(:registrations).permi...
+	                							      ^):
+  
+app/controllers/registrations_controller.rb:18: syntax error, unexpected '.', expecting ';' or '\n'
+Started GET "/sign_in" for ::1 at 2019-04-20 14:36:07 -0400
+  
+SyntaxError (/home/felipe/Desktop/lab-assignment-6-naxolorca/app/controllers/registrations_controller.rb:18: syntax error, unexpected '.', expecting ';' or '\n'
+	def user_params 							params.require(:registrations).permi...
+	                							      ^):
+  
+app/controllers/registrations_controller.rb:18: syntax error, unexpected '.', expecting ';' or '\n'
+Started GET "/sign_in" for ::1 at 2019-04-20 14:36:28 -0400
+  
+SyntaxError (/home/felipe/Desktop/lab-assignment-6-naxolorca/app/controllers/registrations_controller.rb:18: syntax error, unexpected '.', expecting ';' or '\n'
+	def user_params 							params.require(:registrations).permi...
+	                							      ^
+/home/felipe/Desktop/lab-assignment-6-naxolorca/app/controllers/registrations_controller.rb:20: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/registrations_controller.rb:18: syntax error, unexpected '.', expecting ';' or '\n'
+app/controllers/registrations_controller.rb:20: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/sign_in" for ::1 at 2019-04-20 14:36:40 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 68ms (Views: 62.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for ::1 at 2019-04-20 14:37:11 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Af9HfETDMQzJCeuLjaYV/1CHoOmUK2neuN5crI876fMq6UIcnNl2+xJdeeYE59dyilpu2AWte6Scg2GOtvEZAw==", "registrations"=>{"name"=>"Felipe", "last_name"=>"Lorca", "email"=>"naxolorca@gmail.com", "phone"=>"454532627789", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "naxolorca@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (2.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Felipe"], ["last_name", "Lorca"], ["email", "naxolorca@gmail.com"], ["phone", "454532627789"], ["password", "Felipe12345"], ["created_at", "2019-04-20 18:37:11.891230"], ["updated_at", "2019-04-20 18:37:11.891230"]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 69ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/" for ::1 at 2019-04-20 14:37:11 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 58ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-04-20 14:37:32 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7Lu05mHSk7skL9wUOX42inGQfnLiupi95k0DPDpL1AjHrbGGucjUTP97TnmwP/QHq02wQ3M8isfCED4eA4Ek+A==", "session"=>{"email"=>"naxolorca@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: sesion):
+  
+app/controllers/sessions_controller.rb:24:in `login_params'
+app/controllers/sessions_controller.rb:6:in `create'
+Started POST "/login" for ::1 at 2019-04-20 14:38:23 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7Lu05mHSk7skL9wUOX42inGQfnLiupi95k0DPDpL1AjHrbGGucjUTP97TnmwP/QHq02wQ3M8isfCED4eA4Ek+A==", "session"=>{"email"=>"naxolorca@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+Completed 400 Bad Request in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: sesion):
+  
+app/controllers/sessions_controller.rb:25:in `login_params'
+app/controllers/sessions_controller.rb:6:in `create'
